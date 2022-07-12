@@ -1,0 +1,6 @@
+---
+- name: Disc cleanup in tmp
+  tasks:
+    file: 
+      path: /tmp/f6/f4/
+      state: absent
