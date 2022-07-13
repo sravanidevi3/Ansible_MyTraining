@@ -1,0 +1,7 @@
+---
+- name: disc utilization
+  shell: df -h
+  register: disc_output
+
+  debug:
+  - var: disc_output.stdout_lines

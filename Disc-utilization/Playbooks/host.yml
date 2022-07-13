@@ -1,0 +1,8 @@
+---
+- name: host connectivity
+  host: linux
+  become_user: root
+  become: true
+
+  roles:
+   - roles
