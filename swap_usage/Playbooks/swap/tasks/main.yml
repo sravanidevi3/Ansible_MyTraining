@@ -1,0 +1,7 @@
+---
+- name: swap utilization
+  shell: "free | grep Swap | awk '{print $3/$2 * 100}'"
+  register: swap_output
+
+  debug:
+  - var: swap_output.stdout_lines
