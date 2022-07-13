@@ -1,0 +1,18 @@
+---
+- name: Ansible tags
+
+    - debug:
+         msg: "This is the first tag"
+      tags: first
+
+    - debug:
+         msg: "This is the second tag"
+      tags: second
+   
+    - debug:
+         msg: "This is the third tag"
+      tags: third
+
+    - debug:
+         msg: "This is the fourth tag"
+      tags: fourth  
