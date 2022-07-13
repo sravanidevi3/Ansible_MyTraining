@@ -1,0 +1,7 @@
+---
+- name: checking CPU utilization
+  shell: vmstat | grep -v procs |grep -v swpd|awk '{print $5}'
+  register: var_output
+
+- debug:
+    var: var_output.stdout_lines
