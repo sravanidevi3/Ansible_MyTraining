@@ -1,0 +1,6 @@
+- hosts: linux
+  become_user: root
+  become: true
+
+  roles:
+     - text

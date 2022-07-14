@@ -1,0 +1,11 @@
+- name: Creating text file
+  file:
+    path: /tmp/pract.txt
+    state: touch
+    mode: '0775'
+  
+- name: Converting text to zipp format
+  archive:
+     path: /tmp/pract.txt
+     dest: /tmp/pract.zip
+     format: zip
