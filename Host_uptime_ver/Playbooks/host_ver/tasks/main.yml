@@ -1,0 +1,14 @@
+- name: Checking host uptime
+  command: "uptime"
+  register: uptime_out
+
+- debug:
+    var: uptime_out.stdout_lines
+
+
+- name: Displaying host Hostname,version&Distribution
+  command: "uname -a"
+  register: uname_out
+
+- debug:
+    var: uname_out.stdout_lines
