@@ -1,0 +1,4 @@
+- name: commit with comment
+  cli_config:
+      config: set system host-name foo
+      commit_comment: this is a test
