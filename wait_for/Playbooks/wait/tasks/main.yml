@@ -1,0 +1,3 @@
+- name: wait for 30 sec and continue play
+  wait_for:
+      timeout: 30
